@@ -37,8 +37,12 @@ def main() -> None:
                         else ["false", "true"]
                     ),
                 })
-        labels.append({"name": name, "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
-                       "attributes": attrs})
+        labels.append({
+            "name": name,
+            "color": "#808080" if name == tax.ignore else COLORS[i % len(COLORS)],
+            "type": "rectangle",
+            "attributes": attrs,
+        })
     text = json.dumps(labels, ensure_ascii=False, indent=2)
     out = ROOT / "cvat" / ("labels_final.json" if args.final else "labels_generated.json")
     out.parent.mkdir(exist_ok=True)
