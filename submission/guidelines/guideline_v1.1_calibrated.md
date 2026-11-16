@@ -1,7 +1,7 @@
-# Guideline gán nhãn — v1.0 — TEAMAIHEINEKEN
+# Guideline gán nhãn — v1.1 — TEAMAIHEINEKEN
 
-- Phiên bản: v1.0
-- Ngày: 2026-11-16
+- Phiên bản: v1.1
+- Ngày: 2026-11-17
 - Người viết / duyệt: Nhóm TEAMAIHEINEKEN
 
 ## 1. Mục tiêu
@@ -20,7 +20,8 @@ Gán bounding box cho người và phương tiện thật nhìn thấy trong ả
 | `motorcycle` | Xe máy hoặc mô tô hai bánh có động cơ. | Mỗi xe là một box; không gộp xe với người ngồi trên xe. |
 | `person` | Người đi bộ, lái xe hoặc người ngồi trên phương tiện. | Gán riêng từng người nhìn thấy, kể cả người đi xe máy. |
 | `three_wheeler` | Phương tiện ba bánh có động cơ như tuk-tuk, xe lam, ba gác máy. | Không gán cùng phương tiện đó thêm một box `motorcycle`. |
-| `other_vehicle` | Phương tiện thật không thuộc các lớp xe trên, gồm xe điện mini, quad, xe trâu bò kéo và xe đẩy. | Chỉ dùng cho phương tiện thật; không dùng cho đồ chơi, tượng hoặc hình ảnh mô phỏng. |
+| `bus` | Xe buýt hoặc xe khách cỡ lớn được thiết kế để chở nhiều hành khách. | Không dùng cho `van` hoặc xe tải có thùng hàng. |
+| `bicycle` | Xe đạp chạy bằng sức người, có bàn đạp và không có động cơ. | Gán xe và người đi xe bằng hai box riêng; không dùng `motorcycle`. |
 | `ignore_region` | Vùng bỏ qua, không phải một vật thể. Dùng cho vùng cục bộ không thể gán từng vật nhất quán. | Không dùng để che một đối tượng rõ ràng hoặc thay cho việc chọn lớp. |
 
 Không thêm lớp ngoài các lớp trong bảng. Không ép một vật vào lớp gần giống nếu vật đó không thỏa định nghĩa lớp.
@@ -42,7 +43,7 @@ Nếu không thể nhận diện đối tượng do bị che quá nhiều, khôn
 1. Box chữ nhật ôm sát đường bao của phần nhìn thấy được; không mở rộng box qua vật che khuất để đoán hình dạng.
 2. Gán box riêng cho từng người và từng phương tiện. Người ngồi trên xe có box `person` riêng; xe có box theo lớp phương tiện tương ứng. Box có thể chồng lấn.
 3. Với xe chở xe, gán xe chở và từng xe được chở nhìn thấy rõ thành các đối tượng riêng.
-4. Với vật có chiều cao box dưới 20 px, không gán box riêng; dùng `ignore_region` cho vùng nhỏ đó nếu cần theo quy tắc QC. Không sửa các ngưỡng trong mục `rules` của taxonomy.
+4. Với vật có chiều cao box dưới 20 px, không gán box riêng; có thể dùng `ignore_region` cho cụm vật nhỏ hoặc vùng dày đặc không thể gán từng vật nhất quán. Không sửa các ngưỡng trong mục `rules` của taxonomy.
 5. Không gán tượng, mannequin, đồ chơi, hình in/quảng cáo hoặc vật chỉ xuất hiện trong phản chiếu. Không gán mascot hay đạo cụ; người điều khiển nhìn thấy rõ vẫn được gán `person`.
 6. Giữ nguyên ảnh không có đối tượng phù hợp; không tạo box giả.
 
@@ -56,7 +57,7 @@ Nếu không thể nhận diện đối tượng do bị che quá nhiều, khôn
 | `img_017.jpg`, `img_027.jpg` | Tượng có hình người / phương tiện | R-04 | Không gán tượng | Không phải người hoặc phương tiện thật đang được gán nhãn. |
 | `img_019.jpg` | Xe dạng ô tô trong đoàn diễu hành, có người điều khiển và mascot | R-05 | Gán `car` nếu là phương tiện thật có người điều khiển; không gán mascot/đạo cụ | Phân biệt phương tiện thật với nhân vật hoặc đồ trang trí. |
 | `img_020.jpg` | Người/phương tiện chỉ thấy qua gương | R-06 | Không gán hình phản chiếu | Phản chiếu không phải đối tượng trực tiếp trong cảnh. |
-| `img_023.jpg` | Xe đạp kéo / xe đẩy | R-07 | Gán `other_vehicle` nếu là phương tiện thật nhìn thấy rõ; gán người điều khiển riêng | Không có lớp xe đạp/xe kéo riêng. |
+| `img_023.jpg` | Xe đạp hoặc xe đạp kéo | R-07 | Gán phần xe đạp là `bicycle`; gán người điều khiển riêng là `person` | Taxonomy v1.1 có lớp xe đạp riêng. Phần xe kéo không thuộc lớp nào thì không gán. |
 | `img_033.jpg` | Mannequin và hình phản chiếu trong cửa kính | R-04, R-06 | Không gán mannequin hoặc hình phản chiếu | Không phải người thật trong cảnh. |
 | `img_038.jpg` | Ô tô đồ chơi trong tủ trưng bày | R-04 | Không gán đồ chơi | Không phải phương tiện thật. |
 
@@ -68,3 +69,4 @@ Nếu không thể nhận diện đối tượng do bị che quá nhiều, khôn
 | Phiên bản | Thay đổi | Lý do |
 |---|---|---|
 | v1.0 | Làm rõ lớp, cách gán người đi xe, xe ba bánh, phương tiện khác, vật bị che/cắt và các ca mô phỏng. | Thống nhất quy tắc trước lượt gán độc lập. |
+| v1.1 | Thêm `bus`, `bicycle`; bỏ `other_vehicle`; giữ `ignore_region` cho vùng không thể gán từng vật nhất quán. | Tách rõ xe buýt và xe đạp, loại bỏ lớp phương tiện quá rộng nhưng vẫn giữ cơ chế bỏ qua của quy trình QC. |

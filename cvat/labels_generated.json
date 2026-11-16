@@ -234,8 +234,47 @@
     ]
   },
   {
-    "name": "other_vehicle",
+    "name": "bus",
     "color": "#f032e6",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "occluded_level",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "0",
+        "values": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "truncated",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "no",
+        "values": [
+          "no",
+          "yes"
+        ]
+      },
+      {
+        "name": "can_review",
+        "mutable": false,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bicycle",
+    "color": "#9a6324",
     "type": "rectangle",
     "attributes": [
       {
