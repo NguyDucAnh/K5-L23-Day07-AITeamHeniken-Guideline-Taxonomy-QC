@@ -197,6 +197,7 @@
   {
     "name": "three_wheeler",
     "color": "#46c8c8",
+    "type": "rectangle",
     "attributes": [
       {
         "name": "occluded_level",
@@ -225,13 +226,17 @@
         "mutable": false,
         "input_type": "checkbox",
         "default_value": "false",
-        "values": []
+        "values": [
+          "false",
+          "true"
+        ]
       }
     ]
   },
   {
     "name": "other_vehicle",
     "color": "#f032e6",
+    "type": "rectangle",
     "attributes": [
       {
         "name": "occluded_level",
@@ -260,7 +265,10 @@
         "mutable": false,
         "input_type": "checkbox",
         "default_value": "false",
-        "values": []
+        "values": [
+          "false",
+          "true"
+        ]
       }
     ]
   },
