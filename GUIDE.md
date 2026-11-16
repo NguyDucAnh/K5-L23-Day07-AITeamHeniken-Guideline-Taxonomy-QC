@@ -4,7 +4,7 @@ Bài nhóm 2–5 người, **4 giờ**, làm trên **cả 40 ảnh**. Chạy l�
 
 ## Tóm tắt một trang
 
-| Pha | Việc | Lệnh chính | Sản phẩm |
+| Pha | Việc  | Lệnh chính | Sản phẩm |
 |---|---|---|---|
 | 0 (15') | Cài đặt, nhận mã | `pip install -r requirements.txt` | `TEAM.md` |
 | 1 (35') | Mỗi người sửa guideline v0 | (đọc 40 ảnh) | `individual/guideline_<mã>.md` |
