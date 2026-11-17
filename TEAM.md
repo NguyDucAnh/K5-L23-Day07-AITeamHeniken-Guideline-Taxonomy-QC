@@ -5,7 +5,7 @@
 - Người điều phối:Nguyễn Đức Anh-2A202603209
 - Thành Viên :Nguyễn Đức Anh - 2A202603209, Đào Duy Hiếu - 2A202603235, Nguyễn Thế Anh - 2A202603242, Chu Việt Hùng- 2A202603203
 - Người review bản cuối:Nguyễn Đức Anh - 2A202603209
-- Commit chốt bài (điền ở kênh nộp sau khi commit):https://github.com/NguyDucAnh/K5-L23-Day07-AITeamHeniken-Guideline-Taxonomy-QC
+- Commit chốt bài (điền ở kênh nộp sau khi commit): 50174f0
 
 ## Kết quả tóm tắt (điền cuối bài)
 
