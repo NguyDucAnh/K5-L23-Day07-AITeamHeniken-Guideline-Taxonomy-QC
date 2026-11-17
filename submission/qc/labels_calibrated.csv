@@ -175,7 +175,7 @@ img_011.jpg,person,304.49,336.09,17.11,49.33,0,no,calibration
 img_012.jpg,truck,325.16,210.5,160.65,190.12,0,no,calibration
 img_012.jpg,car,296.39,292.4,32.21,34.33,0,no,calibration
 img_012.jpg,car,3.38,286.6,247.68,173.94,0,no,calibration
-img_012.jpg,car,289.62,246.74,670.38,386.25,0,no,calibration
+img_012.jpg,truck,289.62,246.74,670.38,386.25,0,no,calibration
 img_013.jpg,car,296.38,416.31,56.04,27.56,3,no,calibration
 img_013.jpg,car,239.57,417.12,41.29,27.8,1,no,calibration
 img_013.jpg,motorcycle,252.44,441.16,61.67,42.69,0,no,calibration
@@ -237,6 +237,7 @@ img_019.jpg,person,696.67,95.15,25.6,39.85,0,no,calibration
 img_019.jpg,person,925.37,151.4,34.63,129.96,0,no,calibration
 img_019.jpg,person,87.43,8.65,52.83,87.09,0,no,calibration
 img_019.jpg,person,306.48,146.19,58.05,170.68,0,no,calibration
+img_019.jpg,car,121.0,204.0,758.0,432.0,0,no,calibration
 img_021.jpg,person,83.67,251.63,60.54,81.86,0,no,calibration
 img_021.jpg,person,133.99,436.75,275.03,205.28,0,no,calibration
 img_021.jpg,person,582.61,302.1,178.58,315.68,0,no,calibration
@@ -295,7 +296,7 @@ img_021.jpg,person,871.73,217.86,26.61,54.2,0,no,calibration
 img_021.jpg,person,885.28,216.65,15.97,39.2,0,no,calibration
 img_021.jpg,person,777.82,218.99,20.09,30.13,0,no,calibration
 img_021.jpg,person,730.85,227.09,21.06,30.45,0,no,calibration
-img_022.jpg,motorcycle,479.42,462.62,211.61,160.19,0,no,consensus
+img_022.jpg,three_wheeler,479.42,462.62,211.61,160.19,0,no,calibration
 img_023.jpg,bicycle,566.41,199.49,225.12,333.45,0,no,calibration
 img_023.jpg,motorcycle,406.27,173.24,49.34,51.43,2,no,calibration
 img_023.jpg,motorcycle,426.31,171.75,40.06,51.72,2,no,calibration
