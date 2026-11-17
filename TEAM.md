@@ -1,8 +1,9 @@
 # Thông tin nhóm
 
-- Tên nhóm:
-- Mã thành viên (ba chữ số):
-- Người điều phối:
+- Tên nhóm:AITeamHeniken
+- Mã thành viên (ba chữ số):209,235,242,203
+- Người điều phối:Nguyễn Đức Anh
+- Thành Viên :Nguyễn Đức Anh - 2A202603209, Đào Duy Hiếu - 2A202603235, Nguyễn Thế Anh - 2A202603242, Chu Việt Hùng- 2A202603203
 - Người review bản cuối:
 - Commit chốt bài (điền ở kênh nộp sau khi commit):
 
