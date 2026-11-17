@@ -2,7 +2,7 @@
 
 - Phiên bản: v1.0
 - Ngày: 2026-11-16
-- Người viết / duyệt: Nguyễn Đức Anh
+- Người viết / duyệt: Nguyễn Đức Anh - 2A202603209
 
 ## 1. Mục tiêu
 
