@@ -69,4 +69,4 @@ Nếu không thể nhận diện đối tượng do bị che quá nhiều, khôn
 | Phiên bản | Thay đổi | Lý do |
 |---|---|---|
 | v1.0 | Làm rõ lớp, cách gán người đi xe, xe ba bánh, phương tiện khác, vật bị che/cắt và các ca mô phỏng. | Thống nhất quy tắc trước lượt gán độc lập. |
-| v1.1 | Thêm `bus`, `bicycle`; bỏ `other_vehicle`; giữ `ignore_region` cho vùng không thể gán từng vật nhất quán. | Tách rõ xe buýt và xe đạp, loại bỏ lớp phương tiện quá rộng nhưng vẫn giữ cơ chế bỏ qua của quy trình QC. |
+| v1.1 | Giữ nguyên toàn bộ rule và taxonomy v1.0; ghi nhận cách áp dụng thống nhất cho class, bbox, thuộc tính và `ignore_region` sau calibration. | Sửa nhãn bất đồng theo quy tắc đã khóa, không thay đổi nghĩa guideline. |

@@ -1,0 +1,4 @@
+{
+  "kind": "editorial",
+  "summary": "Giữ nguyên rule và taxonomy v1.0; chuẩn hóa cách áp dụng class, bbox, thuộc tính và ignore_region theo quyết định calibration."
+}
